@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style type="text/css">
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <form onsubmit="return check()">
+            Please Enter Your Name </br>
+            <input type="text" id='name'><span id="alert"></span> </br>
+            <input type="submit" value="Submit Value">
+        </form>
+
+
+    
+
+
+
+
+
+
+
+        <script type="text/javascript">
+            function check()
+            {
+                //document.getElementById('alert').innerHTML = "Name can not be empty.";
+                var n = document.getElementById('name');
+                if(n.value.length == 0 )
+                {
+                    document.getElementById('alert').innerHTML = "<span style='color:red;'> *Name can not be empty.</span>";
+                    
+                    //alert("Wrong");
+                    
+                    return false;
+                    
+                }
+                
+
+            }
+        </script>
+    </body>
+</html>

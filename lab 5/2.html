@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style type="text/css">
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <form onsubmit="return check()">
+            Please Enter Your Name </br>
+            <input type="text" id='name'><span id="alert_name"></span> </br>
+            Enter Your University </br>
+            <input type="text" id='uni'><span id="alert_uni"></span> </br>
+            <input type="submit" value="Submit Value">
+        </form>
+
+
+    
+
+
+
+
+
+
+
+        <script type="text/javascript">
+            function check()
+            {
+                //document.getElementById('alert').innerHTML = "Name can not be empty.";
+                var name = document.getElementById('name');
+                var uni = document.getElementById('uni');
+                
+                if(name.value.length == 0 && uni.value.length == 0)
+                {
+                    document.getElementById('alert_name').innerHTML = "<span style='color:red;'> *Name can not be empty.</span>"; 
+                    document.getElementById('alert_uni').innerHTML = "<span style='color:red;'> *University Name can not be empty.</span>"; 
+                    
+                    return false;
+                }
+                
+                else if(name.value.length == 0 )
+                {
+                    document.getElementById('alert_name').innerHTML = "<span style='color:red;'> *Name can not be empty.</span>"; 
+                    //alert("Wrong");
+                    
+                    if(uni.value.length !=0)
+                    {
+                        document.getElementById('alert_uni').innerHTML = ""; 
+                    
+                    }
+                    return false;
+                    
+                }
+                else if(uni.value.length == 0 )
+                {
+                    document.getElementById('alert_uni').innerHTML = "<span style='color:red;'> *University Name can not be empty.</span>"; 
+                    //alert("Wrong");
+                    if(name.value.length !=0)
+                    {
+                        document.getElementById('alert_name').innerHTML = ""; 
+                    
+                    }
+                    return false;
+                }
+                
+
+            }
+        </script>
+    </body>
+</html>
