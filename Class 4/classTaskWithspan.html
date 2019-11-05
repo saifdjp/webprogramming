@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style type="text/css">
+            
+    
+        </style>
+    </head>
+
+    <body>
+
+        <input type="text" name='fname' onkeyup="greet()" id ='tfield'>
+        <p id='greetMessage'>Good Morning, <span id='n'></span></p>
+
+        <script type="text/javascript">
+           // console.log( document.getElementById('tfield'));
+            function greet()
+            {
+                
+                na = document.getElementById('tfield').value;
+                document.getElementById('n').innerHTML = na;
+            }   
+        </script>
+
+    </body>
+</html>

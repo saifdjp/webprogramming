@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style type="text/css">
+            
+    
+        </style>
+    </head>
+
+    <body>
+
+        <h1 id='hdr' onclick="sayhello()">Hello World</h1>
+        <button onclick="changeFunction()">Click</button>
+     
+        <script type="text/javascript">
+            
+            temp = document.getElementById('hdr');
+            //temp.innerHTML = "";
+            
+            console.log(temp);
+            
+            function sayhello(){
+                console.log("Hello Bello!");
+            }
+            function sayMyName(){
+                console.log("What's that ? ")
+            }
+            function changeFunction()
+            {
+                console.log(temp.onclick);
+                temp.onclick = sayMyName;
+                //console.log(t);
+            }
+        </script>
+
+    </body>
+</html>

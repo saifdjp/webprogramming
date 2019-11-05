@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style type="text/css">
+            
+    
+        </style>
+    </head>
+
+    <body>
+
+        <p id='magic'> This is the magic Paragraph!</p>
+        <button onclick="hideAndSeek()">Magic Button</button>
+
+        <script type="text/javascript">
+            para = document.getElementById('magic');
+            text = para.innerHTML;
+
+            function hideAndSeek()
+            {
+                if(para.innerHTML != '')
+                {
+                    para.innerHTML = "";
+                }
+                else
+                {
+                    para.innerHTML = text;
+                }
+            }
+        </script>
+
+    </body>
+</html>
